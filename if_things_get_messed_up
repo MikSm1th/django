@@ -1,0 +1,7 @@
+cd ~/django_projects/mysite
+rm */migrations/00*
+rm db.sqlite3
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
