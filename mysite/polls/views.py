@@ -24,4 +24,6 @@ def results(request, question_id):
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question.id)
 
+def owner(request):
+    return HttpResponse('Hello, world. cfa666de is the polls index.')
 # Create your views here.
